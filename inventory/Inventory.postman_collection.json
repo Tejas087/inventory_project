@@ -1,0 +1,169 @@
+{
+	"info": {
+		"_postman_id": "a789095e-e506-41fc-bbfe-56ca9c94ced1",
+		"name": "Inventory",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44171701",
+		"_collection_link": "https://tg-8403896.postman.co/workspace/TG's-Workspace~9945e53f-8f3a-4dd5-8b22-23edebf44800/collection/44171701-a789095e-e506-41fc-bbfe-56ca9c94ced1?action=share&source=collection_link&creator=44171701"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": [
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/products/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"products",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 17 Apr 2025 09:56:41 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "491"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"name\": \"Notebook\",\n        \"description\": \"\",\n        \"price\": \"40.00\",\n        \"stock\": 5,\n        \"created_at\": \"2025-04-16T09:35:41.376659Z\"\n    },\n    {\n        \"id\": 2,\n        \"name\": \"Wireless Mouse\",\n        \"description\": \"\",\n        \"price\": \"500.00\",\n        \"stock\": 5,\n        \"created_at\": \"2025-04-17T09:09:06.944379Z\"\n    },\n    {\n        \"id\": 3,\n        \"name\": \"Wireless Keyboard\",\n        \"description\": \"\",\n        \"price\": \"1000.00\",\n        \"stock\": 10,\n        \"created_at\": \"2025-04-17T09:18:07.045988Z\"\n    },\n    {\n        \"id\": 5,\n        \"name\": \"Product A\",\n        \"description\": \"Description here\",\n        \"price\": \"100.00\",\n        \"stock\": 25,\n        \"created_at\": \"2025-04-17T09:53:36.553216Z\"\n    }\n]"
+				},
+				{
+					"name": "New Request",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Product A\",\r\n  \"description\": \"Description here\",\r\n  \"price\": 100,\r\n  \"stock\": 25\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/products/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"products",
+								""
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Thu, 17 Apr 2025 09:57:33 GMT"
+						},
+						{
+							"key": "Server",
+							"value": "WSGIServer/0.2 CPython/3.11.0"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept, Cookie"
+						},
+						{
+							"key": "Allow",
+							"value": "GET, POST, HEAD, OPTIONS"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Content-Length",
+							"value": "131"
+						},
+						{
+							"key": "X-Content-Type-Options",
+							"value": "nosniff"
+						},
+						{
+							"key": "Referrer-Policy",
+							"value": "same-origin"
+						},
+						{
+							"key": "Cross-Origin-Opener-Policy",
+							"value": "same-origin"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 6,\n    \"name\": \"Product A\",\n    \"description\": \"Description here\",\n    \"price\": \"100.00\",\n    \"stock\": 25,\n    \"created_at\": \"2025-04-17T09:57:33.153256Z\"\n}"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,19 @@
+{
+	"info": {
+		"_postman_id": "fd51beda-9f4a-4300-b331-75341e7bd70c",
+		"name": "Inventory Management API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44171701",
+		"_collection_link": "https://tg-8403896.postman.co/workspace/TG's-Workspace~9945e53f-8f3a-4dd5-8b22-23edebf44800/collection/44171701-fd51beda-9f4a-4300-b331-75341e7bd70c?action=share&source=collection_link&creator=44171701"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
